@@ -40,7 +40,7 @@ CCSHARED=       -fPIC
 ARFLAGS=        rc
 # Extra C flags added for building the interpreter object files.
 # C flags used for building the interpreter object files
-PY_CFLAGS=      @CMAKE_C_FLAGS@ -DPy_BUILD_CORE
+PY_CFLAGS=      $(CFLAGS) -DPy_BUILD_CORE
 
 
 # Machine-dependent subdirectories
